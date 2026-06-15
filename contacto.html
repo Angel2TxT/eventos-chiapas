@@ -46,17 +46,26 @@
     <section class="page-hero">
       <div class="container reveal">
         <span class="eyebrow">Contacto directo</span>
-        <h1>Una página simple para capturar solicitudes y datos básicos.</h1>
+        <h1>Tu evento merece atención personalizada en Chiapas.</h1>
         <p>
-          No hay base de datos ni backend. El formulario solo sirve como maqueta visual
-          para que la entrega parezca completa y bien estructurada.
+          Cuéntanos tus ideas y recibe una respuesta clara. Esta página muestra un diseño
+          profesional de contacto para tu entrega.
         </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#formulario">Enviar solicitud</a>
+          <a class="btn btn-secondary" href="tel:+529610000000">Llámanos</a>
+        </div>
       </div>
     </section>
 
     <section class="section">
       <div class="container contact-grid">
-        <form class="contact-form reveal">
+        <form id="formulario" class="contact-form reveal">
+          <div class="form-header">
+            <span class="eyebrow">Solicitud de cotización</span>
+            <h2>Cuéntanos los detalles de tu evento</h2>
+            <p>Responde rápido y concreta tu idea: lugar, fecha y estilo de la celebración.</p>
+          </div>
           <div class="field">
             <label for="nombre">Nombre</label>
             <input id="nombre" type="text" placeholder="Tu nombre" />
@@ -97,7 +106,7 @@
         </form>
 
         <aside class="contact-side reveal delay-1">
-          <div class="info-card">
+          <div class="info-card highlight">
             <h2>Datos de referencia</h2>
             <p>Úsalos como ejemplo y cámbialos si tu docente te pide información real.</p>
             <ul class="contact-list">
