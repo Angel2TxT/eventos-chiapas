@@ -43,96 +43,160 @@
   </header>
 
   <main>
-    <section class="page-hero">
-      <div class="container reveal">
-        <span class="eyebrow">Contacto directo</span>
-        <h1>Una página simple para capturar solicitudes y datos básicos.</h1>
-        <p>
-          No hay base de datos ni backend. El formulario solo sirve como maqueta visual
-          para que la entrega parezca completa y bien estructurada.
-        </p>
+    <section class="page-hero contact-hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Contacto alternativo</span>
+          <h1>Diseño elegante para tu página de contacto</h1>
+          <p>Un formato limpio y directo para que los clientes encuentren tu información y envíen un pedido con claridad.</p>
+          <ul class="feature-list">
+            <li>Presentación moderna y profesional</li>
+            <li>Formulario centrado en la acción</li>
+            <li>Información de soporte visible al instante</li>
+          </ul>
+
+          <ul class="hero-stats">
+            <li>
+              <strong>+200</strong>
+              <span>Eventos apoyados</span>
+            </li>
+            <li>
+              <strong>24h</strong>
+              <span>Respuesta estimada</span>
+            </li>
+            <li>
+              <strong>Chiapas</strong>
+              <span>Cobertura completa</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-panel reveal delay-1">
+          <div class="panel-header">
+            <span class="eyebrow">Solicitud de cotización</span>
+            <h2>Háblanos de tu evento</h2>
+          </div>
+
+          <form id="formulario" class="contact-form">
+            <div class="field">
+              <label for="nombre">Nombre completo</label>
+              <input id="nombre" type="text" placeholder="Tu nombre" />
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="correo">Correo electrónico</label>
+                <input id="correo" type="email" placeholder="correo@ejemplo.com" />
+              </div>
+              <div class="field">
+                <label for="telefono">Teléfono</label>
+                <input id="telefono" type="tel" placeholder="(961) 000 0000" />
+              </div>
+            </div>
+            <div class="field">
+              <label for="evento">Tipo de evento</label>
+              <select id="evento">
+                <option>Boda</option>
+                <option>Conferencia</option>
+                <option>Festival</option>
+                <option>Otro</option>
+              </select>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="fecha">Fecha tentativa</label>
+                <input id="fecha" type="date" />
+              </div>
+              <div class="field">
+                <label for="presupuesto">Presupuesto</label>
+                <select id="presupuesto">
+                  <option>Sin definir</option>
+                  <option>Bajo</option>
+                  <option>Medio</option>
+                  <option>Amplio</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" rows="6" placeholder="Cuéntanos fecha, lugar y necesidades"></textarea>
+            </div>
+            <button class="btn btn-primary" type="button">Enviar solicitud</button>
+          </form>
+
+          <p class="contact-note">Diseño estático: el formulario se muestra como maqueta profesional, ideal para la entrega del proyecto.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-features">
+      <div class="container feature-grid reveal delay-1">
+        <article class="feature-card">
+          <span class="feature-icon">💬</span>
+          <h3>Atención personalizada</h3>
+          <p>Asesoría visual y clara para que tu evento se vea bien desde la primera impresión.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon">📍</span>
+          <h3>Cobertura en Chiapas</h3>
+          <p>Tuxtla, San Cristóbal, Comitán y alrededores: una propuesta que se ajusta a tu zona.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon">⚡</span>
+          <h3>Respuesta rápida</h3>
+          <p>El sitio está diseñado para presentar información de contacto con claridad y velocidad.</p>
+        </article>
       </div>
     </section>
 
     <section class="section">
-      <div class="container contact-grid">
-        <form class="contact-form reveal">
-          <div class="field">
-            <label for="nombre">Nombre</label>
-            <input id="nombre" type="text" placeholder="Tu nombre" />
-          </div>
-          <div class="field">
-            <label for="correo">Correo</label>
-            <input id="correo" type="email" placeholder="correo@ejemplo.com" />
-          </div>
-          <div class="field">
-            <label for="evento">Tipo de evento</label>
-            <select id="evento">
-              <option>Boda</option>
-              <option>Conferencia</option>
-              <option>Festival</option>
-              <option>Otro</option>
-            </select>
-          </div>
-          <div class="field-row">
-            <div class="field">
-              <label for="fecha">Fecha tentativa</label>
-              <input id="fecha" type="date" />
-            </div>
-            <div class="field">
-              <label for="presupuesto">Presupuesto</label>
-              <select id="presupuesto">
-                <option>Sin definir</option>
-                <option>Bajo</option>
-                <option>Medio</option>
-                <option>Amplio</option>
-              </select>
-            </div>
-          </div>
-          <div class="field">
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" rows="6" placeholder="Cuéntanos fecha, lugar y necesidades."></textarea>
-          </div>
-          <button class="btn btn-primary" type="button">Enviar solicitud</button>
-        </form>
+      <div class="container contact-cards">
+        <article class="info-card reveal">
+          <h3>Información rápida</h3>
+          <ul class="contact-list">
+            <li><strong>Correo:</strong> hola@eventoschiapas.com</li>
+            <li><strong>Teléfono:</strong> +52 961 000 0000</li>
+            <li><strong>Horario:</strong> Lun–Vie 9:00 a 18:00</li>
+          </ul>
+        </article>
 
-        <aside class="contact-side reveal delay-1">
-          <div class="info-card">
-            <h2>Datos de referencia</h2>
-            <p>Úsalos como ejemplo y cámbialos si tu docente te pide información real.</p>
-            <ul class="contact-list">
-              <li><strong>Correo:</strong> hola@eventoschiapas.com</li>
-              <li><strong>Teléfono:</strong> +52 961 000 0000</li>
-              <li><strong>Horario:</strong> Lunes a viernes, 9:00 a 18:00</li>
-            </ul>
-          </div>
+        <article class="info-card reveal delay-1">
+          <h3>Canales de contacto</h3>
+          <p>WhatsApp para respuesta inmediata, correo para detalles y cotización formal.</p>
+        </article>
 
-          <div class="info-card">
-            <h3>Canales rápidos</h3>
-            <ul class="contact-list">
-              <li>WhatsApp para respuesta rápida</li>
-              <li>Correo para cotizaciones formales</li>
-              <li>Visita previa por agenda</li>
-            </ul>
-          </div>
+        <article class="info-card reveal delay-2 accent">
+          <h3>Nota de entrega</h3>
+          <p>Esta sección refuerza que el sitio es una maqueta estática pensada para una presentación visual atractiva.</p>
+        </article>
 
-          <div class="info-card accent">
-            <h3>Nota de entrega</h3>
-            <p>
-              Aquí puedes explicar que esta página es parte del sitio estático solicitado
-              en la práctica y que la interacción es visual.
-            </p>
-          </div>
+        <article class="info-card reveal delay-1">
+          <h3>Ventajas</h3>
+          <ul class="contact-list">
+            <li>Diseño responsive</li>
+            <li>Lectura rápida</li>
+            <li>Presentación clara de datos</li>
+          </ul>
+        </article>
+      </div>
+    </section>
 
-          <div class="info-card">
-            <h3>Preguntas frecuentes</h3>
-            <ul class="contact-list">
-              <li>¿Se puede pedir cotización? Sí, con este formulario.</li>
-              <li>¿Hay base de datos? No, es una maqueta estática.</li>
-              <li>¿Funciona en móvil? Sí, está adaptado a pantallas pequeñas.</li>
-            </ul>
-          </div>
-        </aside>
+    <section class="section section-process reveal delay-1">
+      <div class="container process-grid">
+        <article class="process-card">
+          <span class="process-step">1</span>
+          <h3>Envía tus datos</h3>
+          <p>Describe tu idea, fecha y cantidad de invitados para recibir una propuesta inicial.</p>
+        </article>
+        <article class="process-card">
+          <span class="process-step">2</span>
+          <h3>Revisa la propuesta</h3>
+          <p>Analiza el diseño y la cotización visual que presentamos como parte de tu proyecto.</p>
+        </article>
+        <article class="process-card">
+          <span class="process-step">3</span>
+          <h3>Agenda tu evento</h3>
+          <p>Fija fecha y lugar, y usa este diseño para mostrar un contacto responsable y profesional.</p>
+        </article>
       </div>
     </section>
   </main>
