@@ -43,105 +43,105 @@
   </header>
 
   <main>
-    <section class="page-hero">
-      <div class="container reveal">
-        <span class="eyebrow">Contacto directo</span>
-        <h1>Tu evento merece atención personalizada en Chiapas.</h1>
-        <p>
-          Cuéntanos tus ideas y recibe una respuesta clara. Esta página muestra un diseño
-          profesional de contacto para tu entrega.
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#formulario">Enviar solicitud</a>
-          <a class="btn btn-secondary" href="tel:+529610000000">Llámanos</a>
+    <section class="page-hero contact-hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Contacto alternativo</span>
+          <h1>Diseño elegante para tu página de contacto</h1>
+          <p>Un formato limpio y directo para que los clientes encuentren tu información y envíen un pedido con claridad.</p>
+          <ul class="feature-list">
+            <li>Presentación moderna y profesional</li>
+            <li>Formulario centrado en la acción</li>
+            <li>Información de soporte visible al instante</li>
+          </ul>
+        </div>
+
+        <div class="hero-panel reveal delay-1">
+          <div class="panel-header">
+            <span class="eyebrow">Solicitud de cotización</span>
+            <h2>Háblanos de tu evento</h2>
+          </div>
+
+          <form id="formulario" class="contact-form">
+            <div class="field">
+              <label for="nombre">Nombre completo</label>
+              <input id="nombre" type="text" placeholder="Tu nombre" />
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="correo">Correo electrónico</label>
+                <input id="correo" type="email" placeholder="correo@ejemplo.com" />
+              </div>
+              <div class="field">
+                <label for="telefono">Teléfono</label>
+                <input id="telefono" type="tel" placeholder="(961) 000 0000" />
+              </div>
+            </div>
+            <div class="field">
+              <label for="evento">Tipo de evento</label>
+              <select id="evento">
+                <option>Boda</option>
+                <option>Conferencia</option>
+                <option>Festival</option>
+                <option>Otro</option>
+              </select>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="fecha">Fecha tentativa</label>
+                <input id="fecha" type="date" />
+              </div>
+              <div class="field">
+                <label for="presupuesto">Presupuesto</label>
+                <select id="presupuesto">
+                  <option>Sin definir</option>
+                  <option>Bajo</option>
+                  <option>Medio</option>
+                  <option>Amplio</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" rows="6" placeholder="Cuéntanos fecha, lugar y necesidades"></textarea>
+            </div>
+            <button class="btn btn-primary" type="button">Enviar solicitud</button>
+          </form>
+
+          <p class="contact-note">Diseño estático: el formulario se muestra como maqueta profesional, ideal para la entrega del proyecto.</p>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="container contact-grid">
-        <form id="formulario" class="contact-form reveal">
-          <div class="form-header">
-            <span class="eyebrow">Solicitud de cotización</span>
-            <h2>Cuéntanos los detalles de tu evento</h2>
-            <p>Responde rápido y concreta tu idea: lugar, fecha y estilo de la celebración.</p>
-          </div>
-          <div class="field">
-            <label for="nombre">Nombre</label>
-            <input id="nombre" type="text" placeholder="Tu nombre" />
-          </div>
-          <div class="field">
-            <label for="correo">Correo</label>
-            <input id="correo" type="email" placeholder="correo@ejemplo.com" />
-          </div>
-          <div class="field">
-            <label for="evento">Tipo de evento</label>
-            <select id="evento">
-              <option>Boda</option>
-              <option>Conferencia</option>
-              <option>Festival</option>
-              <option>Otro</option>
-            </select>
-          </div>
-          <div class="field-row">
-            <div class="field">
-              <label for="fecha">Fecha tentativa</label>
-              <input id="fecha" type="date" />
-            </div>
-            <div class="field">
-              <label for="presupuesto">Presupuesto</label>
-              <select id="presupuesto">
-                <option>Sin definir</option>
-                <option>Bajo</option>
-                <option>Medio</option>
-                <option>Amplio</option>
-              </select>
-            </div>
-          </div>
-          <div class="field">
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" rows="6" placeholder="Cuéntanos fecha, lugar y necesidades."></textarea>
-          </div>
-          <button class="btn btn-primary" type="button">Enviar solicitud</button>
-        </form>
+      <div class="container contact-cards">
+        <article class="info-card reveal">
+          <h3>Información rápida</h3>
+          <ul class="contact-list">
+            <li><strong>Correo:</strong> hola@eventoschiapas.com</li>
+            <li><strong>Teléfono:</strong> +52 961 000 0000</li>
+            <li><strong>Horario:</strong> Lun–Vie 9:00 a 18:00</li>
+          </ul>
+        </article>
 
-        <aside class="contact-side reveal delay-1">
-          <div class="info-card highlight">
-            <h2>Datos de referencia</h2>
-            <p>Úsalos como ejemplo y cámbialos si tu docente te pide información real.</p>
-            <ul class="contact-list">
-              <li><strong>Correo:</strong> hola@eventoschiapas.com</li>
-              <li><strong>Teléfono:</strong> +52 961 000 0000</li>
-              <li><strong>Horario:</strong> Lunes a viernes, 9:00 a 18:00</li>
-            </ul>
-          </div>
+        <article class="info-card reveal delay-1">
+          <h3>Canales de contacto</h3>
+          <p>WhatsApp para respuesta inmediata, correo para detalles y cotización formal.</p>
+        </article>
 
-          <div class="info-card">
-            <h3>Canales rápidos</h3>
-            <ul class="contact-list">
-              <li>WhatsApp para respuesta rápida</li>
-              <li>Correo para cotizaciones formales</li>
-              <li>Visita previa por agenda</li>
-            </ul>
-          </div>
+        <article class="info-card reveal delay-2 accent">
+          <h3>Nota de entrega</h3>
+          <p>Esta sección refuerza que el sitio es una maqueta estática pensada para una presentación visual atractiva.</p>
+        </article>
 
-          <div class="info-card accent">
-            <h3>Nota de entrega</h3>
-            <p>
-              Aquí puedes explicar que esta página es parte del sitio estático solicitado
-              en la práctica y que la interacción es visual.
-            </p>
-          </div>
-
-          <div class="info-card">
-            <h3>Preguntas frecuentes</h3>
-            <ul class="contact-list">
-              <li>¿Se puede pedir cotización? Sí, con este formulario.</li>
-              <li>¿Hay base de datos? No, es una maqueta estática.</li>
-              <li>¿Funciona en móvil? Sí, está adaptado a pantallas pequeñas.</li>
-            </ul>
-          </div>
-        </aside>
+        <article class="info-card reveal delay-1">
+          <h3>Ventajas</h3>
+          <ul class="contact-list">
+            <li>Diseño responsive</li>
+            <li>Lectura rápida</li>
+            <li>Presentación clara de datos</li>
+          </ul>
+        </article>
       </div>
     </section>
   </main>

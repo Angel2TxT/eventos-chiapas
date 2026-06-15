@@ -243,6 +243,88 @@ textarea {
   max-width: 60ch;
 }
 
+.contact-hero {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.94), rgba(8, 12, 24, 0.96));
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.hero-panel {
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 32px;
+  box-shadow: var(--shadow);
+  padding: 2rem;
+}
+
+.panel-header {
+  display: grid;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.panel-header h2 {
+  margin: 0;
+  font-size: clamp(1.9rem, 2.5vw, 2.6rem);
+}
+
+.feature-list {
+  list-style: none;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.feature-list li {
+  position: relative;
+  padding-left: 1.75rem;
+  color: var(--muted);
+}
+
+.feature-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 999px;
+  background: var(--accent);
+}
+
+.contact-note {
+  margin-top: 1.5rem;
+  color: var(--muted);
+}
+
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.contact-cards .info-card {
+  min-height: 200px;
+  padding: 1.8rem;
+}
+
+.contact-cards .info-card h3 {
+  margin-top: 0;
+}
+
+.contact-form {
+  display: grid;
+  gap: 1rem;
+}
+
 .hero-note {
   font-size: 0.98rem;
   margin-top: 0.8rem;
